@@ -8,7 +8,6 @@ export default function App() {
     <>
       <GlobalStyle />
       <Header />
-      <h1>Teste</h1>
     </>
   );
 }

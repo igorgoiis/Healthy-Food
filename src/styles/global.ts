@@ -3,6 +3,15 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
   :root {
     --background: #FFFFFF;
+    --primary-color: #BADC58;
+    --white: #ffffff;
+    --black: #1D164D;
+    --gray: #9E9BAF;
+
+    --font-title: 'Montserrat';
+    --font-body: 'Muli';
+
+
   }
 
   * {
@@ -28,6 +37,16 @@ export const GlobalStyle = createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
   }
 
   [disabled] {
