@@ -17,6 +17,12 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 32px 0;
+
+    @media (max-width: 1100px) {
+        & {
+            padding: 1.25rem;
+        }
+    }
 `;
 
 export const Logo = styled.h1`
@@ -24,7 +30,7 @@ export const Logo = styled.h1`
     font-size: 2rem;
     font-weight: 700;
     line-height: 39px;
-    color: var(--primary-color);
+color: var(--primary-color);
 `;
 
 export const Menu = styled.nav`
