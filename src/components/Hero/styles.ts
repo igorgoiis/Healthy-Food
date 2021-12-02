@@ -23,16 +23,24 @@ export const Content = styled.div`
 export const Title = styled.h1`
   width: 20rem;
   font-family: var(--font-title);
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 3rem;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4.3rem;
   color: var(--black);
   margin-bottom: 2rem;
+  
 `;
 
+export const SearchContent = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`;
 export const Input = styled.input`
-  margin-right: .5rem;
-  padding: .5rem 1rem;
+  min-width: 343px;
+  min-height: 52px;
+  margin-right: 1rem;
+  padding: 1rem;
   border: 1px solid var(--black);
   border-radius: .2rem;
   font-size: 1rem;
@@ -43,7 +51,8 @@ export const Input = styled.input`
 `;
 
 export const ButtonSearch = styled.button`
-  padding: .469rem;
+  width: 52px;
+  height: 52px;
   background: var(--primary-color);
   color: var(--white);
   border: 1px solid var(--primary-color);
@@ -51,5 +60,5 @@ export const ButtonSearch = styled.button`
 `;
 
 export const IconButtonSearch = styled(BiSearch)`
-  font-size: 1rem;
+  font-size: 1.5rem;
 `;
