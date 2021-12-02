@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import "@fontsource/muli";
+import "@fontsource/montserrat";
 
 export const GlobalStyle = createGlobalStyle`
   :root {

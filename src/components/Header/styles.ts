@@ -5,7 +5,10 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
 `;
 
 export const Content = styled.div`
@@ -38,6 +41,9 @@ export const Menu = styled.nav`
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    li a {
         font-family: var(--font-body);
         font-size: 1rem;
         font-weight: 700;
@@ -49,8 +55,13 @@ export const Menu = styled.nav`
     li button {
         background: var(--white);
         color: var(--primary-color);
+        font-family: var(--font-body);
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
         border: none;
-        border-radius: 5px;;
+        border-radius: 5px;
         padding: 1rem 1.5rem;
     }
 `;
