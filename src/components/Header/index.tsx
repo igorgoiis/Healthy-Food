@@ -1,8 +1,8 @@
-import { Container, Content, Logo, Menu } from './styles';
+import { HeaderContainer, Content, Logo, Menu } from './styles';
 
 function Header() {
   return (
-    <Container>
+    <HeaderContainer>
       <Content>
         <Logo><a href="/">Healthy Food</a></Logo>
         <Menu>
@@ -14,7 +14,7 @@ function Header() {
           </ul>
         </Menu>
       </Content>
-    </Container>
+    </HeaderContainer>
   )
 }
 

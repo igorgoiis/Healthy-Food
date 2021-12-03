@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { Container } from '../../styles/global';
 
-export const Container = styled.div`
+export const HeaderContainer = styled.header`
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,18 +12,14 @@ export const Container = styled.div`
     z-index: 10;
 `;
 
-export const Content = styled.div`
-    max-width: 1088px;
-    width: 100%;
+export const Content = styled(Container)`
     display: flex;
     justify-content: space-between;
-    padding: 32px 0;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-    @media (max-width: 1100px) {
-        & {
-            padding: 1.25rem;
-        }
-    }
+    ${Container}
 `;
 
 export const Logo = styled.h1`

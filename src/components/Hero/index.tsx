@@ -1,11 +1,7 @@
 import {
-  ButtonSearch,
   Content,
   HeroContent,
   IconButtonSearch,
-  Input,
-  SearchContent,
-  Title
 } from './styles';
 
 function Hero() {
@@ -13,13 +9,13 @@ function Hero() {
     <>
       <HeroContent>
         <Content>
-          <Title>Ready for Trying a new recipe?</Title>
-          <SearchContent>
-            <Input type="text" placeholder="Search healthy recipes" />
-            <ButtonSearch>
+          <h1>Ready for Trying a new recipe?</h1>
+          <div>
+            <input type="text" placeholder="Search healthy recipes" />
+            <button>
               <IconButtonSearch />
-            </ButtonSearch>
-          </SearchContent>
+            </button>
+          </div>
         </Content>
       </HeroContent>
     </>

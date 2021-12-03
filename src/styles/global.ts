@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import "@fontsource/muli";
 import "@fontsource/montserrat";
 
@@ -12,8 +12,6 @@ export const GlobalStyle = createGlobalStyle`
 
     --font-title: 'Montserrat';
     --font-body: 'Muli';
-
-
   }
 
   * {
@@ -62,3 +60,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
 `;
+
+export const Container = styled.div`
+  width: 100%;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  z-index: 1;
+
+  @media screen and (max-width: 991px) {
+    padding-right: 30px;
+  padding-left: 30px;
+  }
+`
