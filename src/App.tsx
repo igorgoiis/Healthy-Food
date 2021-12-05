@@ -9,7 +9,7 @@ export default function App() {
     <Router>
       <GlobalStyle />
       <Header />
-      {/* <Home /> */}
+      <Home />
     </Router>
   );
 }

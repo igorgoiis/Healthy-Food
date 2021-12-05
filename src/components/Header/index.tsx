@@ -1,8 +1,15 @@
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { IconContext } from 'react-icons/lib';
-
-import { HeaderContainer, Content, Logo, NavMenu, MobileIcon, LinkMenu, LinkMenuRegister } from './styles';
+import {
+  HeaderContainer,
+  Content,
+  Logo,
+  NavMenu,
+  MobileIcon,
+  LinkMenu,
+  LinkMenuRegister,
+  IconCloseMenuMobile,
+  IconOpenMenuMobile
+} from './styles';
 
 function Header() {
   const [click, setClick] = useState(false);
@@ -10,7 +17,6 @@ function Header() {
   const handleClick = () => setClick(!click);
 
   return (
-    <IconContext.Provider value={{ color: '#FFF' }}>
       <HeaderContainer>
         <Content>
           <Logo to="/">Healthy Food</Logo>
@@ -31,11 +37,10 @@ function Header() {
             </ul>
           </NavMenu>
           <MobileIcon onClick={handleClick}>
-            {click ? <FaTimes /> : <FaBars />}
+            {click ? <IconCloseMenuMobile /> : <IconOpenMenuMobile />}
           </MobileIcon>
         </Content>
       </HeaderContainer>
-    </IconContext.Provider>
   )
 }
 
