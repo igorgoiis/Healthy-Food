@@ -10,6 +10,10 @@ export const Content = styled(Container)`
 
   h1 {
     font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-align: center;
     color: var(--black);
   }
 
@@ -17,6 +21,9 @@ export const Content = styled(Container)`
     width: 60%;
     text-align: center;
     font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
     color: var(--gray);
   }
 

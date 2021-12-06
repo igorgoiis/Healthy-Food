@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import { Container, ButtonSeeRecipe } from './styles';
 
 interface RecipeProps {
   recipe: {
@@ -14,7 +14,7 @@ const RecipeItems = ({ recipe }: RecipeProps) => {
       <img src={recipe.image} alt={recipe.title} />
       <div>
         <h2>{recipe.title}</h2>
-        <button>See Recipe</button>
+        <ButtonSeeRecipe to="/">See Recipe</ButtonSeeRecipe>
       </div>
     </Container>
   );
