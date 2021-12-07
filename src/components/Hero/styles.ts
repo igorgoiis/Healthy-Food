@@ -6,7 +6,7 @@ import { Container } from '../../styles/global';
 export const HeroContent = styled.div`
   width: 100%;
   height: 100vh;
-  max-height: 700px;
+  max-height: 875px;
   display: flex;
   justify-content: center;
   align-items: center;
