@@ -1,5 +1,6 @@
 import Hero from '../../components/Hero';
 import OurBestRecipes from '../../components/OurBestRecipes';
+import TheBestService from '../../components/TheBestService';
 import { Container } from './styles';
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <Container>
       <Hero />
       <OurBestRecipes />
+      <TheBestService />
     </Container>
   );
 }

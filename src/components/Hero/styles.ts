@@ -54,6 +54,7 @@ export const Content = styled(Container)`
   @media (max-width: 767px) {
     align-items: center;
     text-align: center;
+    margin-top: 103px;
   }
 
   h1 {
