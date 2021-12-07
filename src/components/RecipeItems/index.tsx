@@ -1,4 +1,4 @@
-import { Container, ButtonSeeRecipe } from './styles';
+import { Container, ButtonSeeRecipe, ContainerMobile} from './styles';
 
 interface RecipeProps {
   recipe: {
@@ -10,6 +10,7 @@ interface RecipeProps {
 
 const RecipeItems = ({ recipe }: RecipeProps) => {
   return (
+    <>
     <Container>
       <img src={recipe.image} alt={recipe.title} />
       <div>
@@ -17,6 +18,14 @@ const RecipeItems = ({ recipe }: RecipeProps) => {
         <ButtonSeeRecipe to="/">See Recipe</ButtonSeeRecipe>
       </div>
     </Container>
+
+    <ContainerMobile to="/">
+      <img src={recipe.image} alt={recipe.title} />
+      <div>
+        <h2>{recipe.title}</h2>
+      </div>
+    </ContainerMobile>
+    </>
   );
 }
 

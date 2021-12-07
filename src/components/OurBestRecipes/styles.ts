@@ -25,6 +25,10 @@ export const Content = styled(Container)`
     font-weight: 400;
     line-height: 1.5rem;
     color: var(--gray);
+
+    @media (max-width: 560px) {
+      width: 100%;
+    }
   }
 
   ${Container}

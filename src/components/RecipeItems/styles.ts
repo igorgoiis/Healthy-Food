@@ -7,13 +7,18 @@ export const Container = styled.div`
   border-radius: 7px;
   box-shadow: 0 15px 20px #1d164d22;
 
+  @media (max-width: 460px) {
+    display: none;
+  }
+
   img {
-    width: auto;
-    height: 100%;
+    width: 40%;
+    height: fit-content;
   }
 
   div {
-    padding: 0px 32px;
+    width: 60%;
+    padding-left: 32px;
   }
 
   div h2 {
@@ -23,8 +28,48 @@ export const Container = styled.div`
     line-height: 2rem;
     color: var(--black);
     margin-bottom: 20px;
+
+    @media (max-width: 560px) {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
   }
 `
+
+export const ContainerMobile = styled(Link)`
+  display: none;
+  align-items: center;
+  border-radius: 7px;
+  box-shadow: 0 15px 20px #1d164d22;
+
+  @media (max-width: 460px) {
+    display: flex;
+  }
+
+  img {
+    width: 40%;
+    height: fit-content;
+  }
+
+  div {
+    width: 60%;
+    padding-left: 32px;
+  }
+
+  div h2 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: var(--black);
+    margin-bottom: 20px;
+
+    @media (max-width: 560px) {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+  }
+`;
 
 export const ButtonSeeRecipe = styled(Link)`
   padding: 14px 24px;
