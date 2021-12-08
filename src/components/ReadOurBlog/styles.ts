@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Carousel } from '@trendyol-js/react-carousel';
+
 import { Container } from "../../styles/global";
 
 export const SectionContainer = styled(Container)`
@@ -7,7 +9,8 @@ export const SectionContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-
+  margin-bottom: 150px;
+  
   h1 {
     font-family: var(--font-title);
     font-size: 2rem;
@@ -32,4 +35,8 @@ export const SectionContainer = styled(Container)`
   }
 
   ${Container}
+`;
+
+export const Posts = styled(Carousel)`
+  padding-bottom: 50px;
 `;
