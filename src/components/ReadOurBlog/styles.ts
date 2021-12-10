@@ -38,8 +38,6 @@ export const SectionContainer = styled(Container)`
 `;
 
 export const CustomCarousel = styled(Carousel)`
-  background: red;
-
   .rec.rec-slider-container {
     margin: 0;
   }

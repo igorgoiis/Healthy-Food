@@ -1,5 +1,3 @@
-import Carousel from "react-elastic-carousel";
-
 import Thumb1 from '../../assets/blog_image_1.svg';
 import Thumb2 from '../../assets/bloco_image_2.svg';
 import Thumb3 from '../../assets/bloco_image_3.svg';
@@ -81,10 +79,8 @@ Vokalia and Consonantia, there live the blind texts.</span>
         enableMouseSwipe={true}
         showArrows={false}
         preventDefaultTouchmoveEvent={true}
-        itemPadding={[30,0,50,0]}
-        outerSpacing={50}
-        
-        >
+        itemPadding={[30,0,50,0]}        
+      >
         {posts.map(post => <PostItem post={post} key={post.id} /> )}
       </CustomCarousel>
 
