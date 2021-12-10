@@ -7,7 +7,7 @@ import Profile2 from '../../assets/profile-2.jpg';
 import Profile3 from '../../assets/profile-3.jpg';
 import Profile4 from '../../assets/profile-4.jpg';
 
-import { SectionContainer, CustomCarousel } from './styles';
+import { SectionContainer, CustomCarousel, Content } from './styles';
 import PostItem from '../PostItem';
 
 const posts = [
@@ -60,33 +60,29 @@ const posts = [
 
 const breakPoints = [
   { width: 1, itemsToShow: 1.5 },
-  { width: 550, itemsToShow: 2.5 },
-  { width: 768, itemsToShow: 3.5 },
-  { width: 1200, itemsToShow: 4.5 }
+  { width: 550, itemsToShow: 1.5 },
+  { width: 768, itemsToShow: 2.5 },
+  { width: 1200, itemsToShow: 3.5 }
 ];
 
 const ReadOurBlog = () => {
   return (
     <SectionContainer>
-      <h1>Read Our Blog</h1>
-      <span>Far far away, behind the word mountains, far from the countries <br />
-Vokalia and Consonantia, there live the blind texts.</span>
-
-      <CustomCarousel
-        isRTL={false}
-        pagination={false}
-        breakPoints={breakPoints}
-        enableMouseSwipe={true}
-        showArrows={false}
-        preventDefaultTouchmoveEvent={true}
-        itemPadding={[30,0,50,0]}        
-      >
-        {posts.map(post => <PostItem post={post} key={post.id} /> )}
-      </CustomCarousel>
-
-      {/* <Posts  slide={3} swiping={true} show={3.5} infinite={true} >
-        {posts.map(post => <PostItem post={post} key={post.id} /> )}
-      </Posts> */}
+      <Content>
+        <h1>Read Our Blog</h1>
+        <span>Far far away, behind the word mountains, far from the countries <br /> Vokalia and Consonantia, there live the blind texts.</span>
+        <CustomCarousel
+          isRTL={false}
+          pagination={false}
+          breakPoints={breakPoints}
+          enableMouseSwipe={true}
+          showArrows={false}
+          preventDefaultTouchmoveEvent={true}
+          itemPadding={[30,0,50,0]}        
+        >
+          {posts.map(post => <PostItem post={post} key={post.id} /> )}
+        </CustomCarousel>
+      </Content>
     </SectionContainer>
   );
 }

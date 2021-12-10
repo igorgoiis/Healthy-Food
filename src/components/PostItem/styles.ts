@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 0 12px;
-  box-shadow: 0 15px 20px #1d164d22;;
+  border: .5px solid #efefef;
+  border-radius: 7px;
+  box-shadow: 0 15px 20px #1d164d22;
 
   img {
     width: 100%;
@@ -10,6 +12,10 @@ export const Container = styled.div`
     -moz-window-dragging: none;
     user-select: none;
   }
+`;
+
+export const Content = styled.div`
+  padding: 32px 24px;
 
   h1 {
     font-family: var(--font-title);

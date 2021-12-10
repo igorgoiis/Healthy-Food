@@ -3,13 +3,17 @@ import Carousel from "react-elastic-carousel";
 
 import { Container } from "../../styles/global";
 
-export const SectionContainer = styled(Container)`
+export const SectionContainer = styled.div`
+  background-color: #FAFAFC;
+`;
+
+export const Content = styled(Container)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 150px;
   
   h1 {
     font-family: var(--font-title);
@@ -35,11 +39,12 @@ export const SectionContainer = styled(Container)`
   }
 
   ${Container}
-`;
+`
 
 export const CustomCarousel = styled(Carousel)`
   .rec.rec-slider-container {
     margin: 0;
+    overflow: visible;
   }
 
   .rec.rec-slider-container::after {
