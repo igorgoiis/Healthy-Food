@@ -6,6 +6,9 @@ export const Container = styled.div`
 
   img {
     width: 100%;
+    -webkit-user-drag: none;
+    -moz-window-dragging: none;
+    user-select: none;
   }
 
   h1 {

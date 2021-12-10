@@ -1,4 +1,4 @@
-// import { Carousel } from '@trendyol-js/react-carousel';
+import Carousel from "react-elastic-carousel";
 
 import Thumb1 from '../../assets/blog_image_1.svg';
 import Thumb2 from '../../assets/bloco_image_2.svg';
@@ -9,7 +9,7 @@ import Profile2 from '../../assets/profile-2.jpg';
 import Profile3 from '../../assets/profile-3.jpg';
 import Profile4 from '../../assets/profile-4.jpg';
 
-import { SectionContainer, Posts } from './styles';
+import { SectionContainer, CustomCarousel } from './styles';
 import PostItem from '../PostItem';
 
 const posts = [
@@ -48,7 +48,23 @@ const posts = [
       name: 'Kevin Ibrahim',
       picture: Profile4,
     }
-  }
+  },
+  {
+    id: 5,
+    title: 'Quick-start guide to nuts and seeds',
+    thumbnail: Thumb1,
+    autor: {
+      name: 'Kevin Ibrahim',
+      picture: Profile1,
+    }
+  },
+];
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1.5 },
+  { width: 550, itemsToShow: 2.5 },
+  { width: 768, itemsToShow: 3.5 },
+  { width: 1200, itemsToShow: 4.5 }
 ];
 
 const ReadOurBlog = () => {
@@ -58,9 +74,23 @@ const ReadOurBlog = () => {
       <span>Far far away, behind the word mountains, far from the countries <br />
 Vokalia and Consonantia, there live the blind texts.</span>
 
-      <Posts  slide={3} swiping={true} show={3.5} infinite={true} >
+      <CustomCarousel
+        isRTL={false}
+        pagination={false}
+        breakPoints={breakPoints}
+        enableMouseSwipe={true}
+        showArrows={false}
+        preventDefaultTouchmoveEvent={true}
+        itemPadding={[30,0,50,0]}
+        outerSpacing={50}
+        
+        >
         {posts.map(post => <PostItem post={post} key={post.id} /> )}
-      </Posts>
+      </CustomCarousel>
+
+      {/* <Posts  slide={3} swiping={true} show={3.5} infinite={true} >
+        {posts.map(post => <PostItem post={post} key={post.id} /> )}
+      </Posts> */}
     </SectionContainer>
   );
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Carousel } from '@trendyol-js/react-carousel';
+import Carousel from "react-elastic-carousel";
 
 import { Container } from "../../styles/global";
 
@@ -37,6 +37,21 @@ export const SectionContainer = styled(Container)`
   ${Container}
 `;
 
-export const Posts = styled(Carousel)`
-  padding-bottom: 50px;
+export const CustomCarousel = styled(Carousel)`
+  background: red;
+
+  .rec.rec-slider-container {
+    margin: 0;
+  }
+
+  .rec.rec-slider-container::after {
+    content: '';
+    position: absolute;
+    width: 18%;
+    height: 100%;
+    top: 0;
+    right: -20px;
+    background-image: linear-gradient(90deg, transparent -4%, #fff 90%);
+  }
+
 `;
