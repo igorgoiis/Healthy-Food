@@ -14,7 +14,6 @@ export const SectionContainer = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 0;
-  margin-top: 50px;
 
   @media (max-width: 1165px) {
     & {

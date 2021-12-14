@@ -60,9 +60,9 @@ const posts = [
 
 const breakPoints = [
   { width: 1, itemsToShow: 1.5 },
-  { width: 550, itemsToShow: 1.5 },
-  { width: 768, itemsToShow: 2.5 },
-  { width: 1200, itemsToShow: 3.5 }
+  { width: 550, itemsToShow: 2.5 },
+  { width: 768, itemsToShow: 3.5 },
+  { width: 1200, itemsToShow: 4.5 }
 ];
 
 const ReadOurBlog = () => {

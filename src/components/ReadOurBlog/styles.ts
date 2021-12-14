@@ -42,11 +42,6 @@ export const Content = styled(Container)`
 `
 
 export const CustomCarousel = styled(Carousel)`
-  .rec.rec-slider-container {
-    margin: 0;
-    overflow: visible;
-  }
-
   .rec.rec-slider-container::after {
     content: '';
     position: absolute;
@@ -54,7 +49,6 @@ export const CustomCarousel = styled(Carousel)`
     height: 100%;
     top: 0;
     right: -20px;
-    background-image: linear-gradient(90deg, transparent -4%, #fff 90%);
+    background-image: linear-gradient(90deg, transparent -4%, #FAFAFC 90%);
   }
-
 `;
